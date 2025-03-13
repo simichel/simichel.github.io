@@ -1,0 +1,25 @@
+---
+layout: archive
+title: "Publications and Talks"
+permalink: /publicationsList/
+author_profile: true
+---
+
+{% if site.author.researchgate %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.researchgate}}">my ResearchGate profile</a>.</div>
+{% endif %}
+
+{% include base_path %}
+
+
+<!-- ## Articles and Preprints -->
+<h2> Articles and Preprints </h2><hr />
+<ol reversed>{% for post in site.publications reversed %}
+  {% include archive-single-publication.html %}
+{% endfor %}</ol>
+
+<!-- ## Talks -->
+<h2> Talks </h2><hr />
+<ul>{% for post in site.talks reversed %}
+  {% include archive-single-talk-cv.html %}
+{% endfor %}</ul>
