@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ------------
-* **Ph.D in applied Mathematics** - University of Bordeaux, Talence, 2022 - [PDF](https://theses.hal.science/tel-03656234) or [info](https://theses.fr/2022BORD0050).
+* **Ph.D in applied Mathematics** - University of Bordeaux, Talence, 2022 - [HAL](https://theses.hal.science/tel-03656234) or [these.fr](https://theses.fr/2022BORD0050).
 * **Master in Computational Science and Modelling** - University of Rennes 1, Rennes, 2018
 * **Bachelor in Mathematics, Computing and Statistics** - University of South Brittany, Vannes, 2016
 
@@ -101,4 +101,4 @@ Other activities
 ------------------
 * **Sailing:** After 8 summer seasons of teaching sailing, I continue to practice catamaran, windsurf and kitesurf. 
 * **Swimming:** After several years of practicing swimming races during high school, I stopped for 12 years (mainly for my studies). Then, I decided to resume in september 2024. All my rankings are available on the [FFN](https://ffn.extranat.fr/webffn/nat_recherche.php?idact=nat&idrch_id=989895&idbas=50) website. 
-* **Sewing:** Thanks to 
+* **Sewing:** I started sewing in 2019 during my PhD. Here are some of my creations: [here](/portfolio).

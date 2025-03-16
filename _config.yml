@@ -22,7 +22,7 @@ repository               : "simichel/simichel.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "zoom_ship.png" #"ship.png"
   name             : "Sixtine MICHEL"
   pronouns         : # example: "she/her"  
   bio              : "Post-doctoral researcher at University of Ferrara "
@@ -77,14 +77,14 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
   preprints:
     title: 'Preprint Papers'
+  manuscripts:
+    title: 'Journal Articles' 
+  books:
+    title: 'Books'   
+  conferences:
+    title: 'Conference Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -227,6 +227,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  cv:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -259,6 +262,15 @@ defaults:
   - scope:
       path: ""
       type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _cv
+  - scope:
+      path: ""
+      type: cv
     values:
       layout: single
       author_profile: true
