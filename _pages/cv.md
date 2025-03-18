@@ -8,12 +8,12 @@ redirect_from:
 ---
 
 {% include base_path %}
-
+ 
 Education
 ------------
-* **Ph.D in applied Mathematics** - University of Bordeaux, Talence, 2022 - [HAL](https://theses.hal.science/tel-03656234) or [these.fr](https://theses.fr/2022BORD0050).
-* **Master in Computational Science and Modelling** - University of Rennes 1, Rennes, 2018
-* **Bachelor in Mathematics, Computing and Statistics** - University of South Brittany, Vannes, 2016
+* **Ph.D in applied Mathematics** - [University of Bordeaux](https://www.u-bordeaux.fr/), Talence, 2022 - [HAL](https://theses.hal.science/tel-03656234) or [these.fr](https://theses.fr/2022BORD0050).
+* **Master in Computational Science and Modelling** - [University of Rennes 1](https://www.univ-rennes.fr/), Rennes, 2018
+* **Bachelor in Mathematics, Computing and Statistics** - [University of South Brittany](https://www.univ-ubs.fr/fr/index.html), Vannes, 2016
 
 Work experience
 ------------------
