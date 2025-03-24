@@ -99,6 +99,6 @@ Various certifications
 
 Other activities
 ------------------
-* **Sailing:** After 8 summer seasons of teaching sailing, I continue to practice catamaran, windsurf and kitesurf. 
+* **Sailing:** After 8 summer seasons of teaching sailing, I continue practicing catamaran, windsurf and kitesurf. 
 * **Swimming:** After several years of practicing swimming races during high school, I stopped for 12 years (mainly for my studies). Then, I decided to resume in september 2024. All my rankings are available on the [FFN](https://ffn.extranat.fr/webffn/nat_recherche.php?idact=nat&idrch_id=989895&idbas=50) website. 
 * **Sewing:** I started sewing in 2019 during my PhD. Here are some of my creations: [here](/portfolio).
