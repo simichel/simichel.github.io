@@ -27,9 +27,9 @@ Research topics
 ================
 My research are mainly focused on numerical methods to solve **hyperbolic PDEs**. In particular,
 I perform **stability analysis** (Fourier Analysis) of **high order methods**, as well as benchmarkings. 
-So far, I studied particularly **explicite methods** in the **Eulerian formulation**, neverthless I am currently intering into **implicite/explicite** methods, 
-in the **Lagrangian formulation** with adaptative remeshing technics. 
+So far, I studied mainly **explicit methods** in the **Eulerian formulation**, nevertheless I am currently interesting into **implicit/explicit** methods, 
+in the **Lagrangian formulation** with adaptive remeshing techniques. 
 
-I also study, in a material deformation frame, **contact detection algorithms** to evaluate the most accuratly the dynamical response of materials.
+I also study, in a material deformation frame, **contact detection algorithms** to evaluate the most accurately the dynamical response of materials.
 
 <div class="wordwrap"> You can visit the <a href="/research">Research topics</a> page for more info. </div>

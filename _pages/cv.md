@@ -8,7 +8,9 @@ redirect_from:
 ---
 
 {% include base_path %}
- 
+<!-- /home/smichel/documents/sixtinemichel.github.io/files/publications/Finite_Element_Methods_for_Shallow_Water_Equations.pdf -->
+<div style="text-align: right"> <a href="/files/publications/Finite_Element_Methods_for_Shallow_Water_Equations.pdf"><b>PDF version </b></a> </div>
+
 Education
 ------------
 * **Ph.D in applied Mathematics** - [University of Bordeaux](https://www.u-bordeaux.fr/), Talence, 2022 - [HAL](https://theses.hal.science/tel-03656234) or [these.fr](https://theses.fr/2022BORD0050).

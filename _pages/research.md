@@ -1,20 +1,20 @@
 ---
 layout: archive
 title: "Research topics"
+permalink: /research/
 author_profile: true
-redirect_from: 
-  - /research/
-  - /research.html
+redirect_from:
+  - /research
 ---
 
 <br />
 
 My research are mainly focused on numerical methods to solve **hyperbolic PDEs**. In particular,
 I perform **stability analysis** (Fourier Analysis) of **high order methods**, as well as benchmarkings. 
-So far, I studied particularly **explicite methods** in the **Eulerian formulation**, neverthless I am currently intering into **implicite/explicite** methods, 
-in the **Lagrangian formulation** with adaptative remeshing technics. 
+So far, I studied mainly **explicit methods** in the **Eulerian formulation**, nevertheless I am currently interesting into **implicit/explicit** methods, 
+in the **Lagrangian formulation** with adaptive remeshing techniques. 
 
-I also study, in a material deformation frame, **contact detection algorithms** to evaluate the most accuratly the dynamical response of materials.
+I also study, in a material deformation frame, **contact detection algorithms** to evaluate the most accurately the dynamical response of materials.
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 
@@ -25,21 +25,21 @@ I also study, in a material deformation frame, **contact detection algorithms** 
 Continuous Galerkin high order methods to solve hyperbolic equations
 ---------------------------------------------------------------------
 <!-- ### Numerical models -->
-During my PhD, I interested in the construction of high order stabilised Continuous Galerkin formulation to solve hyperbolic equations. In particular, I studied
-* different polynomial approximations as well as spatial discretisations and their construction (1D and 2D) in a finite elements frame;
-* different time integrations methods;
-* different stabilisation technics.
+During my PhD, I became interested in the construction of high order stabilized Continuous Galerkin formulation to solve hyperbolic equations. In particular, I studied
+* different polynomial approximations as well as spatial discretizations and their construction (1D and 2D) in a finite elements frame;
+* different time integration methods;
+* different stabilization techniques.
 <!-- 1. Lagrange polynomials, which are the classical used for FE formulations, with -->
-  <!-- * Uniforme discretisation, the classical approach; -->
-  <!-- * Fekete discretisation built to optimise interpolation formulas; -->
-  <!-- * Gauss-Lobatto and Cubature discretisation built to optimise integration formulas; -->
+  <!-- * Uniforme discretization, the classical approach; -->
+  <!-- * Fekete discretization built to optimise interpolation formulas; -->
+  <!-- * Gauss-Lobatto and Cubature discretization built to optimise integration formulas; -->
 <!-- 2. Bernstein polynomials, which verify additional properties besides the one for Lagrangian points (such as their integrals are positive).  -->
 
-For more detail about numerical models, methodology and results, you can refer to my PhD manuscript available on [HAL](https://theses.hal.science/tel-03656234).
+For more details about numerical models, methodology and results, you can refer to my PhD manuscript available on [HAL](https://theses.hal.science/tel-03656234).
 
 ### Stability analysis
-My research around stability analysis of numerical schemes aims to propose, through Fourier analysis, stability criterium and metric of interest in order to optimise numerical 
-formulations of methods. In particular, I perform **mono and bi-dimensional fully discrete Von Neumann analysis** of **Finite Elements formalutions**. \\
+My research around stability analysis of numerical schemes aims to propose, through Fourier analysis, stability criteria and metric of interest in order to optimize numerical 
+formulations of methods. In particular, I perform **mono and bi-dimensional fully discrete Von Neumann analysis** of **Finite Elements formulations**. \\
 Starting from linear advection problems and using the periodicity of the solution, 
 <!-- $$
 \begin{align*}
@@ -61,41 +61,41 @@ $$
 \end{equation*}
 $$
 ![fig1](images/about/Fourier_1D_periodicity.png){: width="80%"} \\ -->
-the **spatial and temporale discretisation** of numerical schemes allows to write: $$\forall$$ explicite numerical schemes: 
+the **spatial and temporal discretization** of numerical schemes allows to write: $$\forall$$ explicit numerical schemes: 
 <p style="text-align: center;"> $$ \widetilde{\mathbf{U}}^{n+1} = G(\theta ,{\color{red} CFL},{\color{red} \delta}) \widetilde{\mathbf{U}}^{n} $$ </p> 
-with $$G$$ the amplification matrix. Then, we can define <u>stability criterium</u> and <u>metric of interest</u> in the amplification matrix in order to optimise 
+with $$G$$ the amplification matrix. Then, we can define <u>stability critera</u> and <u>metric of interest</u> in the amplification matrix in order to optimize 
 $${\color{red} CFL},{\color{red} \delta}$$ for any $$\theta$$, for all numerical schemes:
-![fig1](images/about/Fourier_full_disc.png){: width="70%"} 
+![fig1](/images/research/about/Fourier_full_disc.png){: width="70%"} 
 
-**NB:** Independantly, we can also perform partial discrete stability analysis: 
+**NB:** Independently, we can also perform <u>partial discrete</u> stability analysis: 
 * Spatial analysis - dispersion curves : \\
-  ![fig1](images/about/Fourier_space.png){: width="80%"} 
+  ![fig1](/images/research/about/Fourier_space.png){: width="80%"} 
 * Temporal analysis - dispersion curves of differents SSPRK schemes: \\
-  ![fig1](images/about/Fourier_SSPRK.png){: width="60%"} 
+  ![fig1](/images/research/about/Fourier_SSPRK.png){: width="60%"} 
   
 ### Coastal hydrodynamic issues
 
-In the coastal hydrodynamic frame, several **challenges** appear and has to be take into account. In particular, I study several type of formulations:
-* Wave propagation with a **high accuracy**: through *high order methods*;
-* **Preservation of the lake at rest**: through *Well-balanced* formulation; \\
+In the context of coastal hydrodynamics, several **challenges** appear and must be taken into account. In particular, I study several types of formulations:
+* Wave propagation with a **high accuracy**: through *<u>high order methods</u>*;
+* **Preservation of the lake at rest**: through *<u>Well-balanced</u>* formulation; \\
   Example of *Basic* $$\mathbb{P}_1$$ element, SSPRK & OSS: \\
-  ![fig1](images/about/LakeAtRest_P1Basic.png){: width="80%"} \\
+  ![fig1](/images/research/about/LakeAtRest_P1Basic.png){: width="80%"} \\
   Adding a perturbation on the left boundary \\
-  ![fig2](images/about/LakeAtRest_Cub_perturbation.png){: width="80%"}
-* **Shock/discontinuities capturing technique**: through additional *artificial viscosity* terms; \\
+  ![fig2](/images/research/about/LakeAtRest_Cub_perturbation.png){: width="80%"}
+* **Shock/discontinuities capturing technique**: with additional *<u>artificial viscosity</u>* terms; \\
   Example of an asymetric break of a dam:\\
-  ![fig3](images/about/DamBreakIC.png){: width="60%"} \\
-  ![fig3](images/about/DamBreakEntropy.png){: width="80%"} 
+  ![fig3](/images/research/about/DamBreakIC.png){: width="60%"} \\
+  ![fig3](/images/research/about/DamBreakEntropy.png){: width="80%"} 
 
 
 <!-- ### Benchmarking -->
 
-For more detail about methodology and results, you can refer to my PhD manuscript available on [HAL](https://theses.hal.science/tel-03656234).
+For more details about methodology and results, you can refer to my PhD manuscript available on [HAL](https://theses.hal.science/tel-03656234).
 
-**Main collaborators for this topic:** [Mario Ricchiuto](https://team.inria.fr/cardamom/marioricchiuto/) and [Davide Torlo](https://davidetorlo.it/).
+**Main collaborators for these topics:** [Mario Ricchiuto](https://team.inria.fr/cardamom/marioricchiuto/) and [Davide Torlo](https://davidetorlo.it/).
 
 
-**For students who are interested in these topics**, the CARDAMOM team propose some master thesis, PhD and post-doctoral positions! Have a look on the associated [page](https://team.inria.fr/cardamom/job-offers/).
+**For students who are interested in these topics**, the CARDAMOM team proposes some master thesis, PhD and post-doctoral positions! Have a look at the associated [page](https://team.inria.fr/cardamom/job-offers/).
 
 <!-- <hr style="border:1px solid #345a8c"> -->
 <!-- #345a8c -->
@@ -115,32 +115,42 @@ During my postdoctoral fellow at the CEA, I focused on developing innovative num
 ### Numerical models
 
 To evaluate the dynamical behaviour of materials, we can base on Euler's equations, which can describe the elasto-plastic physics of materials, in a Lagrangian formulation, with cell-centered and collocated **Finite Volume schemes**.\\
-![fig8](images/about/FV_cells.png){: width="80%"} \\
+![fig8](/images/research/about/FV_cells.png){: width="80%"} \\
 In particular, I use **SGH** (*Staggered-Grid Hydrodynamics*) and **CLH** (*Collocated Lagrangian Hydrodynamics*) schemes in 1D, 2D, and 3D (see R. Loubere or P.H. Le Maire et al. works) for solving the Euler equations.
 
 ### Contact detection algorithm
 Concerning the **contact detection procedure**, based on a Lagrangian approach to the numerical problem, several algorithms exist in the literature, mainly based on collision/penetration detection via a node-to-segment (NTS) technique (see article L. De Lorenzis et al. works and the references therein).
-However, these methods do not provide information on the exact time of contact or its location. Moreover, for particularly complex geometries, the cost of the detection algorithm increases and can lead to unphysical situations.
+However, these methods do not provide information on the exact time of contact or its location. Moreover, for particularly complex geometries, the cost of the detection algorithm increases and can lead to nonphysical situations.
 
 To overcome these problems, I proposed a new algorithm, based on **Thales's theorem**, and usable for $$n$$-dimensional problems, $$n\in\mathbb{N}$$.
 This technique, which I called **CETT** (*Continuous Extension of the Thales Theorem*), allows for precise (or even exact) detection of contact time and location.
 
-The definition of this technique is quite intuitive in 2D since it is based on a collinearity condition between two vectors, which can also be expressed as solving a quadratic equation. The interpretation of the **CETT** for one-dimensional problems is straightforward. Finally, the extension to three-dimensional space is more complex in that the collinearity condition is satisfied from a vector product with two unknowns, and the three resulting terms of the vector product are not necessarily zero, unlike two-dimensional problems where the vector product yields a single component in $$\vec{z}$$.
+The definition of this technique is quite intuitive in 2D since it is based on a collinearity condition between two vectors, which can also be expressed as solving a quadratic equation. The interpretation of the **CETT** for one-dimensional problems is straightforward. Finally, the extension to three-dimensional space is more complex in that the collinearity condition is satisfied from a vector product with two unknowns. Moreover the three resulting terms of the vector product are not necessarily zero, unlike two-dimensional problems where the vector product yields a single component in $$\vec{z}$$.
 
 This project is very innovative in the sense that until now, no multidimensional contact detection technique has been proposed in the literature, providing the time and position of contact, with an accuracy of order $$> 1$$.
 
-![gifcontact3D](/images/gif/contact/output_3D_diagonal_sphere.gif){: width="40%"}
-![gifcontact3D](/images/gif/contact/output_2D_diagonal_circle.gif){: width="40%"}
+![gifcontact3D](/images/research/gif/contact/output_3D_diagonal_sphere.gif){: width="40%"}
+![gifcontact3D](/images/research/gif/contact/output_2D_diagonal_circle.gif){: width="40%"}
 
-For more detail about the multidimensional algorithm, you can refer to my recent paper about this subject available on [HAL](https://cea.hal.science/DAM/hal-04981784v1).
+For more details about multidimensional algorithms, you can refer to my recent paper about this subject available on [HAL](https://cea.hal.science/DAM/hal-04981784v1).
 
-**Main collaborators for this topic:** [Gael Poette](https://site-imb.math.u-bordeaux.fr/fr/fiche-personnelle-gpoette) and Nicolas Therme (CEA CESTA).
+**Main collaborators for these topics:** [Gael Poette](https://site-imb.math.u-bordeaux.fr/fr/fiche-personnelle-gpoette) and Nicolas Therme (CEA CESTA).
 
 
-**For students who are interested in these topics**, the CEA propose some master thesis, PhD and Post-doctoral positions. You can visit related pages [here](https://www.emploi.cea.fr/offre-de-emploi/liste-toutes-offres.aspx?changefacet=1&facet_Contract=1781) or [here](https://www-dam.cea.fr/damidf/offres-theses-et-post-doc/
+**For students who are interested in these topics**, the CEA proposes some master thesis, PhD and Post-doctoral positions. You can visit related pages [here](https://www.emploi.cea.fr/offre-de-emploi/liste-toutes-offres.aspx?changefacet=1&facet_Contract=1781) or [here](https://www-dam.cea.fr/damidf/offres-theses-et-post-doc/
 ).
 
 
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+<hr style="border:1px solid #345a8c">
+
+High order asymptotic preserving scheme
+-------------------------------------------
+
+Section in creation...
+
+**Main collaborators for these topics:** [Walter Boscheri](https://www.lama.univ-savoie.fr/members/default/boscheriw).
 
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
@@ -150,17 +160,17 @@ For more detail about the multidimensional algorithm, you can refer to my recent
 Weather routing studies
 -------------------------------------------
 
-To meet decarbonization objectives in maritime transport, weather routing plays an important role. In this context, [D-ICE Engineering](https://www.dice-engineering.com/) has developed a versatile, efficient, and robust multi-objective weather routing algorithm to reduce vessel fuel consumption.
-Among other things, [D-ICE Engineering](https://www.dice-engineering.com/) acts as a third party for shipowners to calculate the potential benefits of routing through statistical weather routing studies (i.e., simulating hundreds of voyages over the past years, using historical weather data). 
-However, since these statistics are based on specific inputs, biais can be introduced directly from study case inputs.
+To meet decarbonization objectives in maritime transport, the weather routing plays an important role. In this context, [D-ICE Engineering](https://www.dice-engineering.com/) has developed a versatile, efficient, and robust multi-objective *<u>weather routing algorithm</u>* to reduce vessel fuel consumption.
+Among other things, [D-ICE Engineering](https://www.dice-engineering.com/) acts as a third party for shipowners to calculate the potential benefits of routing through statistical *weather routing studies* (i.e., simulating hundreds of voyages over the past years, using historical weather data). 
+However, since these statistics are based on specific inputs, bias can be introduced directly from study case inputs.
 
-My main research at [D-ICE Engineering](https://www.dice-engineering.com/) was part this frame, to quantify the biais introduced by different factors in statistical weather routing study, and also the optimisation of operational weather routing algorithm.. 
+My main research at [D-ICE Engineering](https://www.dice-engineering.com/) were part this frame, to **quantify the bias introduced by different factors in statistical *weather routing study***, and also the **optimization of operational *weather routing algorithm***.
 
 <!-- ### Use the wind to save the world (and your wallet) -->
 
 ### Some research studies 
-* **Crystal effect**: Statistical studies being based on historical weather data, a biais is straightly introduce beacause in an operational context, only weather forecasts are available. 
- I therefore proposed a study to highlight the bias introduced by the input meteorological data, as well as various factors that could impact it. I also proposed a study on the impact of routing update frequency (and weather forecasts) on operational routing.
+* **Crystal effect**: Statistical studies being based on historical weather data, a bias is straightly introduced because in an operational context, only weather forecasts are available. 
+ I therefore proposed a study to highlight the bias introduced by the input meteorological data, as well as various factors that could influence it. I also proposed a study on the impact of routing update frequency (and weather forecasts) on operational routing.
 * **Bias introduced by statistical samples** (in terms of travel departure dates): To this end, I defined convergence metrics as well as precision criteria to quantify deviations from "optimal" data.
 * **Operational routing algorithm optimization**: if we consider a weather model providing forecasts for X days, it is possible to have routes that exceed this forecast duration. I then proposed different algorithms to define the optimal route in an operational framework,
 based on metrics defining risk exposures according to the options (*Pareto optimal*);
@@ -173,9 +183,9 @@ And other smaller projects
 
 <!-- Section in building ![gifship](images/gif/ship_gif.gif){: width="40%"} -->
 
-**Main collaborators for this topic:** Maxime Dupuy (D-ICE Engineering) and Frédéric Deybach (Total Energies).
+**Main collaborators for these topics:** Maxime Dupuy (D-ICE Engineering) and Frédéric Deybach (Total Energies).
 
-**For students who are interested in these topics**, D-ICE is looking for its futur talents! Have a look on the associated [career page](https://www.dice-engineering.com/carriere).
+**For students who are interested in these topics**, D-ICE is looking for its future talents! Have a look at the associated [career page](https://www.dice-engineering.com/carriere).
 
 
 <!-- Getting started
