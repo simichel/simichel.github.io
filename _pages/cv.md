@@ -11,14 +11,14 @@ redirect_from:
 <!-- /home/smichel/documents/sixtinemichel.github.io/files/publications/Finite_Element_Methods_for_Shallow_Water_Equations.pdf -->
 <div style="text-align: right"> <a href="/files/publications/Finite_Element_Methods_for_Shallow_Water_Equations.pdf"><b>PDF version </b></a> </div>
 
-Education
-------------
+<i class="fa-solid fa-graduation-cap"></i> Education
+------------------------------------------------
 * **Ph.D in applied Mathematics** - [University of Bordeaux](https://www.u-bordeaux.fr/), Talence, 2022 - [HAL](https://theses.hal.science/tel-03656234) or [these.fr](https://theses.fr/2022BORD0050).
 * **Master in Computational Science and Modelling** - [University of Rennes 1](https://www.univ-rennes.fr/), Rennes, 2018
 * **Bachelor in Mathematics, Computing and Statistics** - [University of South Brittany](https://www.univ-ubs.fr/fr/index.html), Vannes, 2016
 
-Work experience
-------------------
+<i class="fa-solid fa-square-root-variable"></i> Work experience
+------------------------------------------------------
 * **Dec. 2024 to now: Post-doctoral position** - University of Ferrara, Ferrara (Italy)
   * Structure Preserving schemes for hyperbolic systems of conservation laws and kinetic equations.
   <!-- * Development and implementation of novel 3D and high order structure preserving scheme: -->
@@ -53,7 +53,7 @@ Work experience
   * Supervisor: Anton Shterenlikht
 
   
-Skills
+<i class="fa-solid fa-laptop"></i> Skills
 ------------------
 * **Scientific programming:**  Fortran, C/C++, Python, Matlab
 * **Software:** GMSH, Paraview, Powerbi, Abaqus, Comsol Multiphysics
@@ -62,19 +62,19 @@ Skills
   <!-- * Sub-skill 2.3  -->
 * **Some tools and library:** Git & CI, LATEX, Pybind11, Documentation Sphinx
 
-Publications
+<i class="fa-solid fa-file"></i> Publications
 ------------------
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+<i class="fa-solid fa-users"></i> Talks
 ------------------
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
-Teaching
+<i class="fa-solid fa-chalkboard-user"></i> Teaching
 ------------------
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
@@ -86,21 +86,24 @@ Teaching
 
 
 
-Various certifications
-------------------
-* **Scuba diving PA20/PE40:**  French certification of scuba diving level 2, since 2019
-* **BNSSA:**  The national first aid and rescue at sea certificate, since 2016
-* **PSE1:** Team First Aid level 1, since 2016
-* **CQP AMV:** Sailing Instructor Certification, since 2014
-* **Driving Licence:** since 2014
-* **BAFA:** Youth Leadership Certificate in Holiday Camp, since 2013
-* **Coastal Boating Licence:** since 2012
-  <!-- * Sub-skill 2.1-->
+<i class="fa-solid fa-tags"></i> Various certifications
+------------------------------------------------------
+* <i class="fa-solid fa-fish"></i> **Scuba diving PA20/PE40:**  French certification of scuba diving level 2, since 2019
+* <i class="fa-sharp-duotone fa-solid fa-life-ring"></i> **BNSSA:**  The national first aid and rescue at sea certificate, since 2016
+* <i class="fa-solid fa-briefcase-medical"></i> **PSE1:** Team First Aid level 1, since 2016
+* <i class="fa-solid fa-sailboat"></i> **CQP AMV:** Sailing Instructor Certification, since 2014
+* <i class="fa-solid fa-car"></i> **Driving Licence:** since 2014
+* <i class="fa-solid fa-puzzle-piece"></i> **BAFA:** Youth Leadership Certificate in Holiday Camp, since 2013
+* <i class="fa-solid fa-ship"></i> **Coastal Boating Licence:** since 2012
+<!-- <i class="fa-solid fa-anchor"></i> -->
+  <!-- * Sub-skill 2.1--> 
   <!-- * Sub-skill 2.2 -->
   <!-- * Sub-skill 2.3  -->
 
-Other activities
-------------------
-* **Sailing:** After 8 summer seasons of teaching sailing, I continue practicing catamaran, windsurf and kitesurf. 
-* **Swimming:** After several years of practicing swimming races during high school, I stopped for 12 years (mainly for my studies). Then, I decided to resume in september 2024. All my rankings are available on the [FFN](https://ffn.extranat.fr/webffn/nat_recherche.php?idact=nat&idrch_id=989895&idbas=50) website. 
-* **Sewing:** I started sewing in 2019 during my PhD. Here are some of my creations: [here](/portfolio).
+<i class="fa-solid fa-heart-pulse"></i> Other activities
+------------------------------------------------------
+* <i class="fa-solid fa-sailboat"></i> **Sailing:** After 8 summer seasons of teaching sailing, I continue practicing catamaran, windsurf and kitesurf. 
+* <i class="fa-solid fa-person-swimming"></i> **Swimming:** After several years of practicing swimming races during high school, I stopped for 12 years (mainly for my studies). Then, I decided to resume in september 2024. All my rankings are available on the [FFN](https://ffn.extranat.fr/webffn/nat_recherche.php?idact=nat&idrch_id=989895&idbas=50) website. 
+* <i class="fa-solid fa-scissors"></i> **Sewing:** I started sewing in 2019 during my PhD. Here are some of my creations: [here](/portfolio).
+
+<!-- https://fontawesome.com/search?q=sail&o=r&ic=free&s=solid&ip=classic -->
