@@ -8,9 +8,10 @@ redirect_from:
 ---
 
 <br />
-I'm Sixtine Michel a postdoctoral researcher at the [University of Ferrara](https://www.unife.it/en), in the Department of Mathematics. 
+I am Sixtine Michel, an Assistant Professor (*enseignant-chercheur*) at [ESILV](https://www.esilv.fr/) for teaching activities and at the [DVRC - De Vinci Research Center](https://www.devinci.fr/research-center/) for research activities.
 
 ### Previous positions:
+ * Postdoctoral researcher at the [University of Ferrara](https://www.unife.it/en), in the Department of Mathematics
  * Project manager and R&D Engineer at [D-ICE Engineering](https://www.dice-engineering.com/)
  * Postdoctoral Fellow at [CEA CESTA](https://www-dam.cea.fr/cesta/a-propos/)
  * Ph.D Student at [INRIA Bordeaux](https://www.inria.fr/fr/centre-inria-bordeaux-sud-ouest) in the [CARDAMOM](https://team.inria.fr/cardamom/) team, under the supervision of [prof. Mario Ricchiuto](https://team.inria.fr/cardamom/marioricchiuto/)
@@ -25,11 +26,8 @@ I'm Sixtine Michel a postdoctoral researcher at the [University of Ferrara](http
 
 Research topics
 ================
-My research are mainly focused on numerical methods to solve **hyperbolic PDEs**. In particular,
-I perform **stability analysis** (Fourier Analysis) of **high order methods**, as well as benchmarkings. 
-So far, I studied mainly **explicit methods** in the **Eulerian formulation**, nevertheless I am currently interesting into **implicit/explicit** methods, 
-in the **Lagrangian formulation** with adaptive remeshing techniques. 
+My research focuses mainly on numerical methods for **hyperbolic PDEs**, with a particular interest in **stability analysis** of **high-order methods** and benchmark design. So far, I have mostly worked on **explicit schemes** in an **Eulerian formulation**; I am now also interested in **implicit-explicit strategies** in **ALE and Lagrangian formulations**, including adaptive remeshing techniques.
 
-I also study, in a material deformation frame, **contact detection algorithms** to evaluate the most accurately the dynamical response of materials.
+I also work on **contact detection algorithms** for material deformation problems, with the goal of accurately capturing contact time and location in dynamic simulations.
 
 <div class="wordwrap"> You can visit the <a href="/research">Research topics</a> page for more info. </div>
