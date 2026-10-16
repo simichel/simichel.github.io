@@ -8,18 +8,18 @@ redirect_from:
 ---
 
 <br />
-I am Sixtine Michel, an Assistant Professor (*enseignant-chercheur*) at [ESILV](https://www.esilv.fr/) for teaching activities and at the [DVRC - De Vinci Research Center](https://www.devinci.fr/research-center/) for research activities.
+I am Sixtine Michel, an assistant professor (*enseignant-chercheur*) at [ESILV](https://www.esilv.fr/), where I teach, and at the [DVRC - De Vinci Research Center](https://www.devinci.fr/research-center/), where I conduct my research.
 
 ### Previous positions:
  * Postdoctoral researcher at the [University of Ferrara](https://www.unife.it/en), in the Department of Mathematics
- * Project manager and R&D Engineer at [D-ICE Engineering](https://www.dice-engineering.com/)
- * Postdoctoral Fellow at [CEA CESTA](https://www-dam.cea.fr/cesta/a-propos/)
- * Ph.D Student at [INRIA Bordeaux](https://www.inria.fr/fr/centre-inria-bordeaux-sud-ouest) in the [CARDAMOM](https://team.inria.fr/cardamom/) team, under the supervision of [prof. Mario Ricchiuto](https://team.inria.fr/cardamom/marioricchiuto/)
+ * Project manager and R&D engineer at [D-ICE Engineering](https://www.dice-engineering.com/)
+ * Postdoctoral fellow at [CEA CESTA](https://www-dam.cea.fr/cesta/a-propos/)
+ * PhD student at [INRIA Bordeaux](https://www.inria.fr/fr/centre-inria-bordeaux-sud-ouest) in the [CARDAMOM](https://team.inria.fr/cardamom/) team, under the supervision of [Prof. Mario Ricchiuto](https://team.inria.fr/cardamom/marioricchiuto/)
  
 ### Education
-* Ph.D in applied Mathematics - [University of Bordeaux](https://www.u-bordeaux.fr/), under the supervision of [prof. Mario Ricchiuto](https://team.inria.fr/cardamom/marioricchiuto/).
-* Master in Computational Science and Modelling - [University of Rennes 1](https://www.univ-rennes.fr/)
-* Bachelor in Mathematics, Computing and Statistics - [University of South Brittany](https://www.univ-ubs.fr/fr/index.html)
+* PhD in Applied Mathematics - [University of Bordeaux](https://www.u-bordeaux.fr/), under the supervision of [Prof. Mario Ricchiuto](https://team.inria.fr/cardamom/marioricchiuto/).
+* Master's degree in Computational Science and Modelling - [University of Rennes 1](https://www.univ-rennes.fr/)
+* Bachelor's degree in Mathematics, Computing and Statistics - [University of South Brittany](https://www.univ-ubs.fr/fr/index.html)
 
 <br />
 <!-- <br /> -->
