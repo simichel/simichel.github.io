@@ -7,16 +7,28 @@ author_profile: true
 
 Selected teaching activities in mathematics.
 
-<ul class="teaching-list">
 {% assign teaching_posts = site.teaching | sort: "teaching_order" %}
-{% for post in teaching_posts %}
-  <li>{{ post.title }} - {{ post.type }}, {{ post.venue }}, ({{ post.academic_year }} - {{ post.semester }})</li>
+{% assign teaching_years = teaching_posts | group_by: "academic_year" | sort: "name" | reverse %}
+{% for year in teaching_years %}
+<section class="teaching-year">
+  <h2>{{ year.name }}</h2>
+  <ul class="teaching-list">
+  {% for post in year.items %}
+    <li>{{ post.title }} - {{ post.type }}, {{ post.venue }}, ({{ post.semester }})</li>
+  {% endfor %}
+  </ul>
+</section>
 {% endfor %}
-</ul>
 
 <style>
+.teaching-year {
+  margin-top: 1.5rem;
+}
+.teaching-year h2 {
+  margin-bottom: 0.5rem;
+}
 .teaching-list {
-  margin-top: 1rem;
+  margin-top: 0;
   padding-left: 1.2rem;
 }
 .teaching-list li {
