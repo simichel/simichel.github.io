@@ -32,6 +32,7 @@ author_profile: true
 - <a href="/files/tp/inside-octobre-2026/TP04-fourmis-pheromones/TP04-fourmis-pheromones.py" download>TP04 – fichier à compléter</a>
 - <a href="/files/tp/inside-octobre-2026/TP04-fourmis-pheromones/TP04-slides.pdf" download>Slides de présentation</a>
 
+
 ## Dossier 6 : TP06 – Descente de gradient
 
 - <a href="/files/tp/inside-octobre-2026/TP06-descente-de-gradient/TP06-descente-de-gradient.py" download>TP06 – fichier à compléter</a>
