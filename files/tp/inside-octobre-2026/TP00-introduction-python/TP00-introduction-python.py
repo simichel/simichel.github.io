@@ -4,8 +4,8 @@ TP 00 : Introduction rapide a Python — 15 minutes
 Auteur : Sixtine MICHEL
 
 Objectif :
-    Programmer une voiture dont la vitesse augmente puis diminue. Completer les
-    six TODO dans l'ordre et executer apres chaque etape.
+    Comparer une voiture programmee et une voiture aux vitesses aleatoires.
+    Completer les sept TODO dans l'ordre et executer apres chaque etape.
 
 Avec Spyder : choisir un backend Automatic ou Qt, redemarrer la console si
 necessaire, puis conserver plt.show(block=True).
@@ -15,6 +15,7 @@ necessaire, puis conserver plt.show(block=True).
 from math import sqrt
 
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 # Duree d'une etape de la simulation, en secondes.
@@ -30,14 +31,15 @@ VITESSES = [0, 1, 2, 4, 6, 8, 8, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 POINT_REFERENCE = 50.0
 
 
-def simuler_voiture():
-    """Calcule la position de la voiture pendant quinze secondes."""
+def simuler_voiture(vitesses, nom):
+    """Calcule la position d'une voiture pendant quinze secondes."""
 
     # Ces variables sont fournies : la voiture part de la position 0 m.
     position = 0.0
     temps = []
     positions = []
 
+    print(f"\n{nom}")
     print("Etape | Position (m) | Vitesse (m/s) | Distance a 0 (m) | Distance au point (m)")
     print("-------------------------------------------------------------------------------")
 
@@ -46,7 +48,7 @@ def simuler_voiture():
     for etape in range(0, 0):
 
         # TODO 2 — Lire la vitesse correspondant a cette etape.
-        # La valeur recherchee se trouve dans VITESSES a l'indice etape.
+        # La valeur recherchee se trouve dans vitesses a l'indice etape.
         vitesse = 0.0
 
         # TODO 3 — Calculer le deplacement puis mettre a jour la position.
@@ -72,27 +74,48 @@ def simuler_voiture():
     return temps, positions
 
 
-def afficher_resultat(temps, positions):
-    """Trace l'evolution de la position dans une fenetre Matplotlib."""
+def afficher_resultat(temps, positions, temps_aleatoire, positions_aleatoires):
+    """Compare les positions des deux voitures dans une fenetre Matplotlib."""
 
-    # TODO 6 — Tracer temps en abscisse et positions en ordonnee.
-    # Utiliser marker="o" et linewidth=2.
-    plt.plot([], [], marker="o", linewidth=2)
+    # TODO 6 — Tracer les deux voitures avec un label pour chacune.
+    # Utiliser marker="o" et linewidth=2 pour les deux courbes.
+    plt.plot([], [], marker="o", linewidth=2, label="Programmee")
+    plt.plot([], [], marker="o", linewidth=2, label="Aleatoire")
 
     # La mise en forme du graphique est fournie.
     plt.xlabel("Temps (s)")
     plt.ylabel("Position (m)")
-    plt.title("Deplacement d'une voiture a vitesse variable")
+    plt.title("Comparaison de deux voitures")
     plt.grid(alpha=0.3)
+    plt.legend()
     plt.tight_layout()
     plt.show(block=True)
 
 
 def main():
-    """Lance la simulation puis affiche le graphique."""
+    """Simule une voiture programmee et une voiture aleatoire."""
 
-    temps, positions = simuler_voiture()
-    afficher_resultat(temps, positions)
+    # Une graine fixe permet de retrouver les memes vitesses a chaque lancement.
+    np.random.seed(42)
+
+    # TODO 7 (bonus) — Creer 16 vitesses aleatoires entre 0 et 8 m/s.
+    # Utiliser np.random.uniform avec size=NB_ETAPES + 1.
+    vitesses_aleatoires = np.zeros(NB_ETAPES + 1, dtype=float)
+
+    # Les deux voitures sont arretees au depart.
+    vitesses_aleatoires[0] = 0.0
+
+    temps, positions = simuler_voiture(VITESSES, "Voiture programmee")
+    temps_aleatoire, positions_aleatoires = simuler_voiture(
+        vitesses_aleatoires,
+        "Voiture aleatoire",
+    )
+    afficher_resultat(
+        temps,
+        positions,
+        temps_aleatoire,
+        positions_aleatoires,
+    )
 
 
 if __name__ == "__main__":

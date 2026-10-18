@@ -106,24 +106,32 @@ def deplacer_individus(population):
     vitesses = population["vitesses"]
 
     # TODO 4 — Appliquer un pas de deplacement.
-    # Ajouter a chaque position le vecteur vitesse correspondant.
-    positions += 0.0 * vitesses
+    # Construire la nouvelle position en ajoutant 1.0 fois la vitesse.
+    # La notation [:] modifie le tableau stocke dans le dictionnaire population.
+    positions[:] = positions
 
-    for axe in (0, 1):
+    # On examine chaque individu separement.
+    for i in range(NB_INDIVIDUS):
 
-        # TODO 5 — Traiter le bord inferieur de l'axe courant.
-        # Construire un masque vrai lorsque la coordonnee est negative, replacer
-        # ces coordonnees sur 0 et inverser la composante de vitesse concernee.
-        masque_bas = np.zeros(NB_INDIVIDUS, dtype=bool)
-        positions[masque_bas, axe] = 0
-        vitesses[masque_bas, axe] *= -1
+        # TODO 5 — Completer les conditions des bords gauche et droit.
+        # x se trouve dans positions[i, 0] et vx dans vitesses[i, 0].
+        if False:
+            positions[i, 0] = 0
+            vitesses[i, 0] = -vitesses[i, 0]
 
-        # TODO 6 — Traiter le bord superieur de l'axe courant.
-        # Construire un masque vrai au-dela de TAILLE_MONDE, replacer les
-        # coordonnees sur la limite et inverser les vitesses correspondantes.
-        masque_haut = np.zeros(NB_INDIVIDUS, dtype=bool)
-        positions[masque_haut, axe] = TAILLE_MONDE
-        vitesses[masque_haut, axe] *= -1
+        if False:
+            positions[i, 0] = TAILLE_MONDE
+            vitesses[i, 0] = -vitesses[i, 0]
+
+        # TODO 6 — Completer les conditions des bords bas et haut.
+        # y se trouve dans positions[i, 1] et vy dans vitesses[i, 1].
+        if False:
+            positions[i, 1] = 0
+            vitesses[i, 1] = -vitesses[i, 1]
+
+        if False:
+            positions[i, 1] = TAILLE_MONDE
+            vitesses[i, 1] = -vitesses[i, 1]
 
 
 # =============================================================================
@@ -136,31 +144,33 @@ def contaminer_population(population):
     positions = population["positions"]
     etats = population["etats"]
 
-    # TODO 7 — Extraire les indices des personnes infectees.
-    # np.where(condition)[0] renvoie les indices auxquels la condition est vraie.
-    indices_infectes = np.array([], dtype=int)
-
-    if len(indices_infectes) == 0:
-        return
-
     nouveaux_infectes = []
 
-    for i in np.where(etats == SAIN)[0]:
+    for i in range(NB_INDIVIDUS):
 
-        # TODO 8 — Construire les vecteurs allant de la personne saine i vers
-        # toutes les personnes infectees. Le resultat est un tableau (n, 2).
-        differences = np.zeros((len(indices_infectes), 2), dtype=float)
-
-        # TODO 9 — Calculer la distance euclidienne associee a chaque vecteur.
-        # Utiliser np.linalg.norm avec le bon axe.
-        distances = np.full(len(indices_infectes), np.inf)
-
-        # TODO 10 — Decider si la personne est contaminee.
-        # Il faut simultanement :
-        #   1. au moins une distance inferieure au rayon de contamination ;
-        #   2. un tirage np.random.random() inferieur a la probabilite donnee.
+        # TODO 7 — Traiter uniquement une personne saine.
         if False:
-            nouveaux_infectes.append(i)
+            infecte_proche = False
+
+            for j in range(NB_INDIVIDUS):
+
+                # TODO 8 — Verifier si la personne j est infectee.
+                if False:
+
+                    # TODO 9 — Calculer la distance entre i et j.
+                    # Formule : sqrt((xj-xi)**2 + (yj-yi)**2).
+                    dx = 0.0
+                    dy = 0.0
+                    distance = 0.0
+
+                    if distance < RAYON_CONTAMINATION:
+                        infecte_proche = True
+                        break
+
+            # TODO 10 — Contaminer selon la probabilite si un infecte est proche.
+            # Combiner infecte_proche et le tirage aleatoire avec and.
+            if False:
+                nouveaux_infectes.append(i)
 
     # On attend la fin du parcours pour eviter qu'une personne nouvellement
     # infectee en contamine une autre durant la meme generation.
@@ -177,13 +187,15 @@ def mettre_a_jour_infections(population):
     etats = population["etats"]
     durees = population["durees"]
 
-    # TODO 11 — Incrementer uniquement la duree des personnes infectees.
-    durees += 0
+    for i in range(NB_INDIVIDUS):
 
-    # TODO 12 — Identifier puis immuniser les personnes gueries.
-    # Une personne doit etre infectee ET avoir atteint DUREE_INFECTION.
-    gueris = np.zeros(NB_INDIVIDUS, dtype=bool)
-    etats[gueris] = IMMUNISE
+        # TODO 11 — Si i est infecte, augmenter sa duree d'infection de 1.
+        if False:
+            durees[i] = durees[i]
+
+            # TODO 12 — Immuniser i lorsque la duree maximale est atteinte.
+            if False:
+                etats[i] = IMMUNISE
 
 
 # =============================================================================
@@ -195,13 +207,20 @@ def compter_etats(population):
 
     etats = population["etats"]
 
-    # TODO 13 — Compter le nombre d'occurrences de chaque etat.
-    # Les trois valeurs retournees doivent etre des entiers Python.
-    return (
-        NB_INDIVIDUS - NB_INFECTES_INITIAUX,
-        NB_INFECTES_INITIAUX,
-        0,
-    )
+    sains = 0
+    infectes = 0
+    immunises = 0
+
+    # TODO 13 — Parcourir les etats et incrementer le bon compteur.
+    for etat in etats:
+        if False:
+            sains = sains + 1
+        elif False:
+            infectes = infectes + 1
+        elif False:
+            immunises = immunises + 1
+
+    return sains, infectes, immunises
 
 
 # =============================================================================
