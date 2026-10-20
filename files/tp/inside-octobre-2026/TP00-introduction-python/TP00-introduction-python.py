@@ -5,7 +5,7 @@ Auteur : Sixtine MICHEL
 
 Objectif :
     Comparer une voiture programmee et une voiture aux vitesses aleatoires.
-    Completer les sept TODO dans l'ordre et executer apres chaque etape.
+    Completer les six TODO dans l'ordre et executer apres chaque etape.
 
 Avec Spyder : choisir un backend Automatic ou Qt, redemarrer la console si
 necessaire, puis conserver plt.show(block=True).
@@ -77,12 +77,15 @@ def simuler_voiture(vitesses, nom):
 def afficher_resultat(temps, positions, temps_aleatoire, positions_aleatoires):
     """Compare les positions des deux voitures dans une fenetre Matplotlib."""
 
-    # TODO 6 — Tracer les deux voitures avec un label pour chacune.
-    # Utiliser marker="o" et linewidth=2 pour les deux courbes.
-    plt.plot([], [], marker="o", linewidth=2, label="Programmee")
-    plt.plot([], [], marker="o", linewidth=2, label="Aleatoire")
-
-    # La mise en forme du graphique est fournie.
+    # Toute la partie graphique est fournie : elle ne fait pas partie des TODO.
+    plt.plot(temps, positions, marker="o", linewidth=2, label="Programmee")
+    plt.plot(
+        temps_aleatoire,
+        positions_aleatoires,
+        marker="o",
+        linewidth=2,
+        label="Aleatoire",
+    )
     plt.xlabel("Temps (s)")
     plt.ylabel("Position (m)")
     plt.title("Comparaison de deux voitures")
@@ -98,7 +101,7 @@ def main():
     # Une graine fixe permet de retrouver les memes vitesses a chaque lancement.
     np.random.seed(42)
 
-    # TODO 7 (bonus) — Creer 16 vitesses aleatoires entre 0 et 8 m/s.
+    # TODO 6 (bonus) — Creer 16 vitesses aleatoires entre 0 et 8 m/s.
     # Utiliser np.random.uniform avec size=NB_ETAPES + 1.
     vitesses_aleatoires = np.zeros(NB_ETAPES + 1, dtype=float)
 
