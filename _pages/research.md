@@ -87,6 +87,56 @@ Stability analysis for shifted-boundary CG discretisations
 
 *Section in preparation.*
 
+Embedded and unfitted boundary methods are useful for **complex geometries**, where building a body-fitted mesh can be costly or inconvenient. In this context, the **Shifted Boundary Method (SBM)** imposes boundary conditions on a nearby surrogate boundary and corrects the boundary trace to account for the true interface location.
+
+<p style="text-align: center;"><img src="/images/research/sbm/sbm_domain_2d.png" alt="Shifted boundary construction on two inflow boundaries" style="width: 30%;"></p>
+
+This work extends my previous stability analyses of high-order **Continuous Galerkin** discretisations to non-periodic configurations with shifted-boundary corrections. I study how the shifted position, the SUPG stabilisation parameter, the polynomial degree, and explicit Runge-Kutta time integration affect both the admissible CFL and the robustness of the fully discrete scheme.
+
+The current methodology combines:
+* construction of CG/SUPG semi-discrete operators with SBM-type boundary contributions. For homogeneous Dirichlet data, the classical SBM correction replaces the fitted boundary trace by
+
+  $$
+  \varphi_j^\star(\boldsymbol x)
+  =
+  \varphi_j(\boldsymbol x)-\varphi_j(\boldsymbol x_s),
+  $$
+
+  while the ROD-L2 correction uses a local polynomial correction
+
+  $$
+  \boldsymbol\varphi_K^\star(\boldsymbol x)
+  =
+  a-\alpha_{L^2}b,
+  \qquad
+  \alpha_{L^2}
+  =
+  \frac{a^T M_K^{-1}b}{b^T M_K^{-1}b},
+  $$
+
+  with $$a=\boldsymbol\varphi_K(\boldsymbol x)$$ and $$b=\boldsymbol\varphi_K(\boldsymbol x_s)$$.
+* spectral stability maps on finite intervals and Cartesian meshes;
+* comparison with Reconstruction for Off-site Data (ROD) variants. In one dimension, the shifted-position scan gives the maximum spectrally stable CFL for several SUPG parameters:
+
+  <p style="text-align: center;"><img src="/images/research/sbm/sbm_cflmax_1d.png" alt="One-dimensional maximum stable CFL for the classical SBM correction" style="width: 60%;"></p>
+
+  <p style="text-align: center;"><img src="/images/research/sbm/rodl2_cflmax_1d.png" alt="One-dimensional maximum stable CFL for the ROD-L2 correction" style="width: 60%;"></p>
+* diagnostics for mesh refinement, non-normal amplification, and two-dimensional advection directions. Since the fully discrete amplification matrix $$G_h$$ can be non-normal, spectral stability alone is only a first filter: even if $$\rho(G_h)\leq 1$$, finite-time perturbations can grow through powers of the amplification matrix. The diagnostic displayed below is
+
+  $$
+  C_h(T)
+  =
+  \max_{0\leq n\Delta t_h\leq T}\|G_h^n\|_2,
+  $$
+
+  monitored under mesh refinement for one representative SUPG value:
+
+  <p style="text-align: center;"><img src="/images/research/sbm/sbm_transient_delta0p03_1d.png" alt="One-dimensional transient-growth diagnostic for the classical SBM correction" style="width: 60%;"></p>
+
+  <p style="text-align: center;"><img src="/images/research/sbm/rodl2_transient_delta0p03_1d.png" alt="One-dimensional transient-growth diagnostic for the ROD-L2 correction" style="width: 60%;"></p>
+
+The analysis gives practical guidance for using shifted-boundary corrections in stabilised CG schemes, and helps identify which boundary closures remain robust under mesh refinement and boundary shifts.
+
 **Main collaborator for this topic:** [Mirco Ciallella](https://sites.google.com/view/mircociallella/research).
 
 

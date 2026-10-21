@@ -68,38 +68,21 @@ redirect_from:
 
 <i class="fa-solid fa-file"></i> Publications
 ------------------
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+Scientific articles published in international peer-reviewed journals.
+
+[See publications](/publications/) · [ResearchGate profile](https://www.researchgate.net/profile/Sixtine-Michel-2)
   
-<i class="fa-solid fa-users"></i> Talks
+<i class="fa-solid fa-users"></i> Talks & Events
 ------------------
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+* Presentations at international conferences and research seminars on my research activities. [See research topics](/research/).
+* Participation in mathematics and science outreach events for a variety of audiences, combining accessible presentations with hands-on activities.
+
+[See talks and events](/talks/).
   
 <i class="fa-solid fa-chalkboard-user"></i> Teaching
 ------------------
-Selected teaching activities in mathematics.
-
-<ul class="cv-teaching-list">
-{% assign teaching_posts = site.teaching | sort: "teaching_order" %}
-{% for post in teaching_posts %}
-  <li>{{ post.title }} - {{ post.type }}, {{ post.venue }}, ({{ post.academic_year }} - {{ post.semester }})</li>
-{% endfor %}
-</ul>
-
-<style>
-.cv-teaching-list {
-  margin-top: 0.4rem;
-  padding-left: 1.2rem;
-}
-.cv-teaching-list li {
-  margin-bottom: 0.25rem;
-  font-size: 0.95rem;
-  line-height: 1.35;
-}
-</style>
+* Mathematics teaching in Bachelor's degree programmes and engineering school, from first- to third-year undergraduate level (L1-L3). [See detailed teaching activities](/teaching/).
+* Designed and delivered several professional training courses at D-ICE Engineering, notably on statistical weather routing tools, programming and software development best practices, unit testing, GitLab CI and AWS deployment, and code documentation with Sphinx; also created tutorials and concise user guides.
   
 <!-- Service and leadership
 ======
@@ -124,7 +107,8 @@ Selected teaching activities in mathematics.
 <i class="fa-solid fa-heart-pulse"></i> Other activities
 ------------------------------------------------------
 * <i class="fa-solid fa-sailboat"></i> **Sailing:** Catamaran, windsurfing and kitesurfing; sailing instructor from 2013 to 2022.
-* <i class="fa-solid fa-person-swimming"></i> **Swimming:** Returned to competitive swimming in 2024; coached swimming from 2010 to 2013 and in 2026; rankings available on the [FFN](https://ffn.extranat.fr/webffn/nat_recherche.php?idact=nat&idrch_id=989895&idbas=50) website.
-* <i class="fa-solid fa-scissors"></i> **Sewing:** Personal sewing projects and handmade creations, available [here](/portfolio).
+* <i class="fa-solid fa-person-swimming"></i> **Swimming:** Returned to competitive swimming in 2024, taking part in numerous pool and open-water events; coached swimming from 2010 to 2013 and again since 2026; rankings available on the [FFN](https://ffn.extranat.fr/webffn/nat_recherche.php?idact=nat&idrch_id=989895&idbas=50) website.<br>
+  **Water polo:** Played competitively from 2008 to around 2016.
+* <i class="fa-solid fa-scissors"></i> **Sewing:** Personal sewing projects and handmade creations.
 
 <!-- https://fontawesome.com/search?q=sail&o=r&ic=free&s=solid&ip=classic -->
